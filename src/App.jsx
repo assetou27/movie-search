@@ -4,7 +4,8 @@ import MovieDisplay from "./components/MovieDisplay";
 import Form from "./components/Form";
 
 export default function App() {
-  const apiKey = "248ec361"; // OMDB API Key
+  const apiKey = import.meta.env.VITE_OMDB_API_KEY;
+ // OMDB API Key
   const [movie, setMovie] = useState(null); // Holds movie data
 
   // Function to fetch movie data
